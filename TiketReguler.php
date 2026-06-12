@@ -19,8 +19,8 @@ class TiketReguler extends Tiket {
     // Mengimplementasikan abstract method hitungTotalHarga
     // Misal: Untuk reguler, total harga adalah harga dasar dikalikan jumlah kursi (tanpa biaya tambahan)
     public function hitungTotalHarga() {
-        return $this->harga_dasar_tiket * $this->jumlah_kursi;
-    }
+    return $this->jumlah_kursi * $this->harga_dasar_tiket;
+}
 
     // Mengimplementasikan abstract method tampilkanInfoFasilitas
     public function tampilkanInfoFasilitas() {
