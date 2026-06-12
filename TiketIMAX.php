@@ -18,10 +18,9 @@ class TiketIMAX extends Tiket {
 
     // Mengimplementasikan abstract method hitungTotalHarga
     // Polimorfisme: IMAX memiliki tambahan biaya teknologi & kacamata 3D sebesar Rp 25.000 per kursi
-    public function hitungTotalHarga() {
-        $biayaTambahanIMAX = 25000;
-        return ($this->harga_dasar_tiket + $biayaTambahanIMAX) * $this->jumlah_kursi;
-    }
+   public function hitungTotalHarga() {
+    return ($this->jumlah_kursi * $this->harga_dasar_tiket) + 35000;
+}
 
     // Mengimplementasikan abstract method tampilkanInfoFasilitas
     public function tampilkanInfoFasilitas() {
