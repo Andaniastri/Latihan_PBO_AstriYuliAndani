@@ -19,9 +19,8 @@ class TiketVelvet extends Tiket {
     // Mengimplementasikan abstract method hitungTotalHarga
     // Polimorfisme: Velvet merupakan kelas kelas premium, ada tambahan biaya layanan mewah Rp 60.000 per kursi
     public function hitungTotalHarga() {
-        $biayaPremiumVelvet = 60000;
-        return ($this->harga_dasar_tiket + $biayaPremiumVelvet) * $this->jumlah_kursi;
-    }
+    return ($this->jumlah_kursi * $this->harga_dasar_tiket) * 1.50;
+}
 
     // Mengimplementasikan abstract method tampilkanInfoFasilitas
     public function tampilkanInfoFasilitas() {
